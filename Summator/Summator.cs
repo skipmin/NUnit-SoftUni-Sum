@@ -8,6 +8,8 @@ namespace Summator
 {
     public static class Summator
     {
+    
+        //Test method for sum of array from numbers
         public static int Sum(int[] arr)
         {
             int sum = arr[0];
@@ -16,7 +18,7 @@ namespace Summator
             return sum;
         }
 
-       //tuka malko
+       //here something
         public static void Test_SumTwoNumbers()
         {
             if (Sum(new int[] { 1, 3 }) != 3)
