@@ -16,7 +16,7 @@ namespace Summator
             return sum;
         }
 
-
+        //ei tuka malko
         public static void Test_SumTwoNumbers()
         {
             if (Sum(new int[] { 1, 3 }) != 3)
