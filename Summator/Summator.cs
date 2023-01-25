@@ -28,9 +28,7 @@ namespace Summator
             {
                 Console.WriteLine("Test pass!");
             }
-
         }  
         
-
     }
 }
