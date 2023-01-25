@@ -33,5 +33,15 @@ namespace Summator.UnitTests
 
             Assert.That(actual, Is.EqualTo(expected));
         }
+
+        [Test]
+        public void Test_Summator_ZeroNumber()
+        {
+            var nums = new int[] { };
+            var actual = Summator.Sum(nums);
+            var expected = 0;
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
     }
 }

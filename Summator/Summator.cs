@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Summator
+﻿namespace Summator
 {
     public static class Summator
     {
@@ -13,7 +6,7 @@ namespace Summator
         //Test method for sum of array from numbers
         public static int Sum(int[] arr)
         {
-            int sum = arr[0];
+            int sum = 0;
             for (int i = 1; i < arr.Length; i++)
                 sum += arr[i];
             return sum;
