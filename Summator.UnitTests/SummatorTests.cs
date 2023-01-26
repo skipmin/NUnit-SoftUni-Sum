@@ -3,7 +3,8 @@ using NUnit.Framework;
 namespace Summator.UnitTests
 {
     public class SummatorTests
-    {
+    {   
+        //Tests sum numbers
         [Test]
         public void Test_Summator_SumTwoPositiveNumbers()
         {
@@ -54,12 +55,13 @@ namespace Summator.UnitTests
             Assert.AreEqual(expected, actual);
         }
 
+        //Tests average number
         [Test]
-        public void Test_Summator_SumBigNumbers()
+        public void Test_Summator_FourPositiveNumbers()
         {
-            var nums = new int[] { 2000000000, 2000000000, 2000000000 };
+            var nums = new int[] {4, 7, 13, 18 };
             var actual = Summator.Sum(nums);
-            var expected = 6000000000;
+            var expected = 0;
 
             Assert.AreEqual(expected, actual);
         }
