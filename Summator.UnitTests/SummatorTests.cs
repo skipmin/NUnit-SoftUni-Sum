@@ -57,13 +57,33 @@ namespace Summator.UnitTests
 
         //Tests average number
         [Test]
-        public void Test_Summator_FourPositiveNumbers()
+        public void Test_Summator_AveragePositiveNumbers()
         {
-            var nums = new int[] {4, 7, 13, 18 };
-            var actual = Summator.Sum(nums);
-            var expected = 0;
+            var b = new int[] { 10, 22, 30, 45 };
+            var actual = Summator.Average(b);
+            var expected = 26;    
 
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(actual, expected);
         }
+
+        [Test]
+        public void Test_Summator_AverageNegativeNumbers()
+        {
+            var b = new int[] {-5, -17, -28, -30};
+            var actual = Summator.Average(b);
+            var expected = -20;
+
+            Assert.AreEqual(actual, expected);
+        }
+
+        /*[Test]
+        public void Test_Summator_AverageLongNumbers()
+        {
+            var b = new long[] { 1000000000, 2000000000, 5000000000, 3000000000 };
+            var actual = Summator.Average(b);
+            var expected = 8500000000;
+
+            Assert.AreEqual(actual, expected);
+        }*/
     }
 }

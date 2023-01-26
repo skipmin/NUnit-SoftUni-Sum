@@ -14,9 +14,9 @@
             return sum;
         }
 
-        public static double Average(int[] arr)
+        public static long Average(int[] arr)
         {
-            double sum = 0;
+            long sum = 0;          
 
             for (int i = 0; i < arr.Length; i++)
             {
