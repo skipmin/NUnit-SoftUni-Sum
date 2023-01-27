@@ -1,3 +1,4 @@
+using System.Reflection.Emit;
 using NUnit.Framework;
 
 namespace Summator.UnitTests
@@ -79,9 +80,9 @@ namespace Summator.UnitTests
         /*[Test]
         public void Test_Summator_AverageLongNumbers()
         {
-            var b = new long[] { 1000000000, 2000000000, 5000000000, 3000000000 };
+            var b = new int[] { 1000000000, 2000000000, 5000000000, 3000000000 };
             var actual = Summator.Average(b);
-            var expected = 8500000000;
+            var expected = 2750000000;
 
             Assert.AreEqual(actual, expected);
         }*/
