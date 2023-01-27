@@ -62,7 +62,7 @@ namespace Summator.UnitTests
         {
             var b = new int[] { 10, 22, 30, 45 };
             var actual = Summator.Average(b);
-            var expected = 26;    
+            var expected = 26.75;    
 
             Assert.AreEqual(actual, expected);
         }
