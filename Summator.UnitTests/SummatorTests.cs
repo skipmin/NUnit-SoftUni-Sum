@@ -9,10 +9,14 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_SumTwoPositiveNumbers()
         {
+            //Arrange
             var nums = new int[] { 1, 2 };
-            var actual = Summator.Sum(nums);
             var expected = 3;
 
+            //Act
+            var actual = Summator.Sum(nums);
+
+            //Assert
             Assert.AreEqual(expected, actual);
         }
 
@@ -55,6 +59,26 @@ namespace Summator.UnitTests
 
             Assert.AreEqual(expected, actual);
         }
+
+
+        [Test]
+        public void Test_Summator_SumPositiveNumbers()
+        {
+            //Arrange
+            var nums = new int[] { 1, 2, 88 };
+            var expected = 91;
+
+            //Act
+            var actual = Summator.Sum(nums);
+
+            //Assert
+            Assert.That(expected, Is.EqualTo(actual));
+            Assert.That(actual, Is.EqualTo(91));
+            Assert.That(9, Is.Not.EqualTo(8));
+
+            Assert.False(9 == 8);
+        }
+
 
         //Tests average number
         [Test]
