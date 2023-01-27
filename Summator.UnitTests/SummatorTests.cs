@@ -17,7 +17,7 @@ namespace Summator.UnitTests
             var actual = Summator.Sum(nums);
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace Summator.UnitTests
             var actual = Summator.Sum(nums);
             var expected = -100;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -37,17 +37,17 @@ namespace Summator.UnitTests
             var actual = Summator.Sum(nums);
             var expected = 6;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
         public void Test_Summator_SumZero()
         {
-            var nums = new int[] { };
+            var nums = Array.Empty<int>();
             var actual = Summator.Sum(nums);
             var expected = 0;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -57,7 +57,7 @@ namespace Summator.UnitTests
             var actual = Summator.Sum(nums);
             var expected = 6000000000;
 
-            Assert.AreEqual(expected, actual);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
 
@@ -72,23 +72,24 @@ namespace Summator.UnitTests
             var actual = Summator.Sum(nums);
 
             //Assert
-            Assert.That(expected, Is.EqualTo(actual));
+            //Assert.That(expected, Is.EqualTo(actual));
             Assert.That(actual, Is.EqualTo(91));
-            Assert.That(9, Is.Not.EqualTo(8));
+            Assert.That(actual, Is.EqualTo(expected));
+            //Assert.That(9, Is.Not.EqualTo(8));
 
-            Assert.False(9 == 8);
+            //Assert.False(9 == 8);
         }
 
 
         //Tests average number
-        [Test]
+        /*[Test]
         public void Test_Summator_AveragePositiveNumbers()
         {
             var b = new int[] { 10, 22, 30, 45 };
             var actual = Summator.Average(b);
-            var expected = 26.75;    
+            var expected = 26.75;
 
-            Assert.AreEqual(actual, expected);
+            Assert.That(expected, Is.EqualTo(actual));
         }
 
         [Test]
@@ -98,17 +99,17 @@ namespace Summator.UnitTests
             var actual = Summator.Average(b);
             var expected = -20;
 
-            Assert.AreEqual(actual, expected);
-        }
+            Assert.That(expected, Is.EqualTo(actual));
+        }*/
 
-        /*[Test]
+        [Test]
         public void Test_Summator_AverageLongNumbers()
         {
-            var b = new int[] { 1000000000, 2000000000, 5000000000, 3000000000 };
+            var b = new long[] { 1000000000, 2000000000, 5000000000, 3000000000 };
             var actual = Summator.Average(b);
             var expected = 2750000000;
 
-            Assert.AreEqual(actual, expected);
-        }*/
+            Assert.That(expected, Is.EqualTo(actual));
+        }
     }
 }

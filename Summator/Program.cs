@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("The average number is: " + Summator.Average(Array.Empty<int>()));
+            Console.WriteLine("The average number is: " + Summator.Average(Array.Empty<long>()));
         }
     }
 }
