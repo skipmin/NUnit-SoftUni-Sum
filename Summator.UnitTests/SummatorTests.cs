@@ -82,12 +82,12 @@ namespace Summator.UnitTests
 
 
         //Tests average number
-        /*[Test]
+        [Test]
         public void Test_Summator_AveragePositiveNumbers()
         {
-            var b = new int[] { 10, 22, 30, 45 };
+            var b = new long[] { 10, 22, 30, 45 };
             var actual = Summator.Average(b);
-            var expected = 26.75;
+            var expected = 26;
 
             Assert.That(expected, Is.EqualTo(actual));
         }
@@ -95,12 +95,12 @@ namespace Summator.UnitTests
         [Test]
         public void Test_Summator_AverageNegativeNumbers()
         {
-            var b = new int[] {-5, -17, -28, -30};
+            var b = new long[] {-5, -17, -28, -30};
             var actual = Summator.Average(b);
             var expected = -20;
 
             Assert.That(expected, Is.EqualTo(actual));
-        }*/
+        }
 
         [Test]
         public void Test_Summator_AverageLongNumbers()
